@@ -17,8 +17,11 @@ const weatherStatus = 'clear';
 let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
-if(astronautCount <= 7 && astronautStatus === 'ready' && totalMassKg < maxMassLimit &&
- (fuelTempCelcius >= minFuelTemp && fuelTempCelcius <= maxFuelTemp) && fuelLevel ==='100%' && weatherStatus === 'clear' ){
+if(astronautCount <= 7 && astronautStatus === 'ready' 
+&& totalMassKg < maxMassLimit 
+&& !(fuelTempCelcius <= minFuelTemp || fuelTempCelcius >= maxFuelTemp) 
+&& fuelLevel ==='100%'
+  && weatherStatus === 'clear' ){
 
     preparedForLiftOff = true;
 }else{
@@ -31,11 +34,11 @@ if (preparedForLiftOff){
     console.log("Date: ", date);
     console.log("Time: ",time);
     console.log("Astronaut count: ", astronautCount);
-    console.log("Crew Mass: ", crewMassKg);
-    console.log("Fuel Mass:", fuelMassKg);
-    console.log("Shuttle Mass : ", shuttleMassKg);
-    console.log("Total Mass: ", totalMassKg);
-    console.log("Fuel Temperature: ", fuelTempCelcius);
+    console.log("Crew Mass: ", crewMassKg ,"kg");
+    console.log("Fuel Mass:", fuelMassKg ,"kg");
+    console.log("Shuttle Mass : ", shuttleMassKg,"kg");
+    console.log("Total Mass: ", totalMassKg,"kg");
+    console.log("Fuel Temperature: ", fuelTempCelcius, "C");
     console.log("Weather Status: ", weatherStatus);
     console.log("--------------------------------------------------------------");
     console.log("Have a safe trip Astronauts - Geeta, Kayal, Teyah, Jada!");
