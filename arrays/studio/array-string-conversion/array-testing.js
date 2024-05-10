@@ -10,6 +10,7 @@ function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
 	let check;
 	let output;
+	output = protoArray1.split(",").reverse().join(",");
 	//TODO: 2. write the code required for this step
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
@@ -21,7 +22,7 @@ function semiDash() {
 	let check;
 	let output;
 //TODO: write the code required for this step
-
+	output = protoArray2.split(";").sort().join("-");
   
 	return output;
 }
@@ -31,7 +32,7 @@ function reverseSpaces() {
 	let check;
 	let output;
   //TODO: write the code required for this step
-
+	output = protoArray3.split(" ").sort().join(" ");
 	return output;
 }
 
@@ -40,7 +41,7 @@ function commaSpace() {
 	let check;
 	let output;
 	//TODO: write the code required for this step
-  
+	output = protoArray4.split(", ").sort().join(", ");
 	return output;
 }
 
