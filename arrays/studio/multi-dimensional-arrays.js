@@ -17,8 +17,8 @@ let cargoHold = [];
 cargoHold.push(foodCabinet,equipmentCabinet, petsCabinet, sleepAidsCabinet);
 console.log(cargoHold);
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
-let cabinetChoice = input.question("Which cabinet do you want to choose?\n 0 - Food Cabinet\n 1 -Equipment Cabinet \n 2 -Pets Cabinet \n 3 - SleepAid Cabinet");
-let item = input.question("What item you want from the cabinet?");
+let cabinetChoice = input.question("Which cabinet do you want to choose?\n 0 - Food Cabinet\n 1 -Equipment Cabinet \n 2 -Pets Cabinet \n 3 - SleepAid Cabinet ");
+let item = input.question("What item you want from the cabinet? ");
 
 //4) Use bracket notation and a template literal to display the contents of the selected cabinet. If the user entered an invalid number, print an error message.
 if(Number(cabinetChoice) == 0 ||
@@ -39,6 +39,6 @@ Number(cabinetChoice) == 3){
         console.log(`The Cabinet ${cabinetChoice} contains the item ${item}`);
     }
     else{
-        console.log(`Cabinet ${cabinetChoice} DOES/DOES NOT contain${item}.`);
+        console.log(`Cabinet ${cabinetChoice} DOES/DOES NOT contain ${item}.`);
     }
 }
