@@ -32,7 +32,7 @@ function reverseSpaces() {
 	let check;
 	let output;
   //TODO: write the code required for this step
-	output = protoArray3.split(" ").sort().join(" ");
+	output = protoArray3.split(" ").sort().reverse().join(" ");
 	return output;
 }
 
@@ -41,7 +41,7 @@ function commaSpace() {
 	let check;
 	let output;
 	//TODO: write the code required for this step
-	output = protoArray4.split(", ").sort().join(", ");
+	output = protoArray4.split(", ").reverse().join(",");
 	return output;
 }
 
