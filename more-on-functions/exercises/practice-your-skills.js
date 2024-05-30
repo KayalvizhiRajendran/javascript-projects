@@ -13,3 +13,15 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let triFunction = function(n){
+    if (typeof(n) === "number"){
+       return n*n*n;
+    }else if (typeof(n) === "string"){
+       return "ARRR!";
+    }else {
+       return n;
+    } 
+ };
+ let triValues = arr.map(triFunction);
+ console.log(triValues);
