@@ -1,0 +1,22 @@
+body {
+    background-color: yellow;
+
+}
+p{
+    color:green;
+}
+h1{
+    font-size: 36pt;
+}
+.center{
+    align-content: center;
+}
+#cool-text{
+    color: blue;
+}
+#list-color{
+    color: red;
+}
+
+
+
