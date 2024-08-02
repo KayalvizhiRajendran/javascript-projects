@@ -61,16 +61,14 @@ window.addEventListener("load", () => {
   });
 
   let leftButton = document.getElementById("left");
-  downButton.addEventListener("click", function (event) {
+  leftButton.addEventListener("click", function (event) {
     let image = document.getElementById("rocket");
-    let height = document.getElementById("spaceShuttleHeight");
-
-    image.style.left = parseInt(image.style.bottom) - 10+ "px";
-    height.innerHTML = parseInt(height.innerHTML) - 10000;
+ 
+    image.style.left = parseInt(image.style.left) - 10+ "px";
   });
 
   let rightButton = document.getElementById("right");
-  upButton.addEventListener("click", function (event) {
+  rightButton.addEventListener("click", function (event) {
     let image = document.getElementById("rocket");
     let height = document.getElementById("spaceShuttleHeight");
 
@@ -82,7 +80,8 @@ window.addEventListener("load", () => {
     let image = document.getElementById("rocket");
     let height = document.getElementById("spaceShuttleHeight");
 
-    image.style.right = parseInt(image.style.right) - 10+ "px";
+    image.style.bottom = parseInt(image.style.bottom) - 10+ "px";
+    height.innerHTML = parseInt(height.innerHTML) - 10000;
   });
 });
 
